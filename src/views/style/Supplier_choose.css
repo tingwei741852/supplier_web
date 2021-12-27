@@ -1,0 +1,34 @@
+
+*{
+  font-size: 18px;
+}
+.prediction,.setting {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+.title-text{
+  margin-top: 1em;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 30px;
+}
+.el-button{
+  vertical-align: top;
+}
+.el-form-item__label {
+  font-size: 18px !important;
+}
+.el-checkbox {
+  /* text-align: right; */
+  width: 100%;
+  padding-left: 10px;
+}
+.el-input__inner {
+  font-size: 18px !important;
+}
+/* .el-table .cell {
+  white-space: nowrap;
+  width: fit-content;
+} */
