@@ -10,9 +10,9 @@
         <h1 class="center" style="text-align: center;font-family: 微軟正黑體; font-weight:bold: center">
           漢翔航空工業股份有限公司</h1>
         <h1 class="center" style="text-align: center;font-family: 微軟正黑體; font-weight:bold: center">
-          報價預測系統</h1>
+          智慧選商系統</h1>
         </div>
-      <h3 style="background-color:black;color:white; font-size:30px">AI BOM System</h3>
+      <h3 style="background-color:black;color:white; font-size:30px">AI Supplier Selection System</h3>
       <div class='formblock'>
         <el-form :model="form" :rules="rules" ref="form" label-position="left" label-width="80px">
           <el-form-item label="帳號" prop="account">

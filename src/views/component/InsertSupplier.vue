@@ -7,13 +7,18 @@
         <!-- <tr v-for="(form, idx) in forms" v-bind:key="idx"> -->
         <tr>
           <td>
-            供應商
-            <el-input  v-model="form.id" placeholder="請輸入供應商"></el-input>
+            供應商編號
+            <el-input  v-model="form.supplier_no" placeholder="請輸入供應商編號"></el-input>
+            <!-- <el-input v-model="form.category" placeholder="請輸入類別"></el-input> -->
+          </td>
+          <td>
+            供應商名稱
+            <el-input  v-model="form.supplier_name" placeholder="請輸入供應商名稱"></el-input>
             <!-- <el-input v-model="form.category" placeholder="請輸入類別"></el-input> -->
           </td>
           <td>
             品質改善意識
-            <el-input type="number" v-model.number="form.q_improve" placeholder="請輸入品質改善意識分數"></el-input>
+            <el-input type="number" v-model.number="form.quality_score" placeholder="請輸入品質改善意識分數"></el-input>
             <!-- <el-input v-model="form.std_mat" placeholder="請輸入標準材質"></el-input> -->
           </td>
           <td>
@@ -25,7 +30,7 @@
         <tr>
           <td>
             管理體制
-            <el-input type="number" v-model.number="form.mgt_n_org" placeholder="請輸入管理體制分數"></el-input>
+            <el-input type="number" v-model.number="form.quality" placeholder="請輸入管理體制分數"></el-input>
           </td>
            <td>
             RDR退運處理
@@ -90,7 +95,7 @@
     <el-footer>
       <div class="footer-block">
         <el-button @click="VisibleFunction">取 消</el-button>
-        <el-button type="primary" @click="InsertFunction">新增</el-button>
+        <el-button type="primary" @click="CheckFunction">確認</el-button>
       </div>
     </el-footer>
   </el-container>
@@ -101,7 +106,7 @@
 export default {
   name: 'Insertdialog',
   props: {
-    InsertFunction: Function,
+    CheckFunction: Function,
     VisibleFunction: Function,
     form: Object
   }

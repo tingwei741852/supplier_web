@@ -2,8 +2,11 @@ export const COLUMN_DATA = [{
   label: '項目',
   children: [
     {
-      label: '供應商',
-      prop: 'id'
+      label: '供應商編號',
+      prop: 'supplier_no'
+    }, {
+      label: '供應商名稱',
+      prop: 'supplier_name'
     }, {
       label: '排序',
       prop: 'total_rank'
@@ -17,7 +20,7 @@ export const COLUMN_DATA = [{
   children: [
     {
       label: '品質改善意識',
-      prop: 'q_improve'
+      prop: 'quality_score'
     }, {
       label: '貨源管理',
       prop: 'sup_mgt'
@@ -35,7 +38,7 @@ export const COLUMN_DATA = [{
   children: [
     {
       label: '管理體制',
-      prop: 'mgt_n_org'
+      prop: 'delivery_score'
     }, {
       label: 'RDR退運處理',
       prop: 'RDR'
@@ -148,10 +151,11 @@ export const CATEGORY_OPTION = [{
 }]
 
 export const FORMDATA = {
-  id: '',
-  q_improve: '',
+  supplier_no: '',
+  supplier_name: '',
+  quality_score: '',
   sup_mgt: '',
-  mgt_n_org: '',
+  delivery_score: '',
   RDR: '',
   location: '',
   gn_purchase: '',
